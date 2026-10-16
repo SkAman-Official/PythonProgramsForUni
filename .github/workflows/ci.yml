@@ -1,0 +1,27 @@
+name: Python checks
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    env:
+      MPLBACKEND: Agg
+      MPLCONFIGDIR: /tmp/portfolio-matplotlib
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: pytest
+      - name: Run every demonstration
+        shell: bash
+        run: |
+          for program in projects/*/main.py; do
+            python "$program"
+          done
