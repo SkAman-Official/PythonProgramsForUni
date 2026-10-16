@@ -17,4 +17,4 @@ Mean wait: 0.667; max wait: 2.000
 Utilization: 1.000
 ```
 
-The built-in case has waits of zero, two and zero time units. I test that calculation, empty queues, idle periods, simultaneous arrivals and deterministic generation. For a longer run I add `--customers 1000 --seed 7`. Rates default to 0.7 arrivals and 1.0 completions per time unit. This is one server with an unbounded waiting room; I do not model priorities, abandonment or confidence intervals. Finite-run utilization excludes time before the first arrival.
+The built-in case has waits of zero, two and zero time units. I test that calculation, empty queues, idle periods, simultaneous arrivals and deterministic generation. For a longer run I added `--customers 1000 --seed 7`. Rates default to 0.7 arrivals and 1.0 completions per time unit. This is one server with an unbounded waiting room; I do not model priorities, abandonment or confidence intervals. Finite-run utilization excludes time before the first arrival.
