@@ -1,9 +1,23 @@
 # Validation record
 
+## Hidden Markov Model addition
+
+The expanded eleven-project repository passed Ruff and all 70 tests locally
+under Python 3.11. The new project contributes 12 tests, including exhaustive
+path enumeration for all length-three sensor sequences, impossible sequences,
+deterministic ties, empty and unknown inputs, invalid probability tables, and
+a 10,000-observation stability check. The default HMM CLI also ran successfully.
+
+GitHub Actions for pull request #2 passed on Python 3.11 and 3.12, checking lint,
+the full test suite and all eleven default demonstrations. The workflow discovers
+projects automatically, so no CI configuration change was needed.
+
+## Initial ten-project validation
+
 The complete repository was checked locally with CPython 3.11.17 and 3.12.14.
 Both environments installed `requirements-dev.txt` successfully and passed
 `python -m pip check`. CI repeats lint, tests and all ten demonstrations on
-Python 3.11 and 3.12; remote CI results are not yet available.
+Python 3.11 and 3.12; the original local results are recorded below.
 
 ## Commands and outcomes
 
@@ -23,8 +37,8 @@ for program in projects/*/main.py; do python "$program"; done
   on-disk inventory, local phrase search, UTF-8 file compression/decompression,
   and a different polynomial/root interval all passed offline.
 - Both PNG files were regenerated with Agg and visually checked.
-- Every project README has 100–150 whitespace-separated words, including its
-  command and output blocks. Every source module has 150–219 lines.
+- Each of the original ten project READMEs has 100–150 whitespace-separated words, including its
+  command and output blocks. Each original source module has 150–219 lines.
 
 ## Default demonstration timings
 
@@ -63,6 +77,6 @@ Cluster labels use synthetic ground truth solely for evaluation, not fitting.
 
 All runtime datasets are generated in code. Tests and examples require no
 credentials, network services or GPU after dependencies are installed. The
-first six projects use only the standard library. Timings and quality scores
+first six projects and project 11 use only the standard library. Timings and quality scores
 apply to these small, fixed-seed examples; each project documents its limitations.
 Installation needs registry access. No repository settings were changed.

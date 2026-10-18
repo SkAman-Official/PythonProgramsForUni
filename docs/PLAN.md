@@ -1,11 +1,14 @@
 # Portfolio plan
 
-I use six core computer-science projects and four AI projects. Each program
-runs offline on a CPU, uses Python 3.11+, and targets about 150–400 source lines.
+The portfolio currently contains six core computer-science projects and five
+AI or probabilistic modelling projects, as part of a 30-day Python practice goal.
+Each program runs offline on a CPU and uses Python 3.11+. The initial ten
+projects targeted about 150–400 source lines; additions prioritize clear scope
+and meaningful verification over a line-count target.
 The datasets are synthetic or bundled with scikit-learn. Each CLI has fixed
 inputs or a seed so its results can be checked again.
 
-## Fifteen candidates
+## Initial fifteen candidates
 
 | # | Candidate | Decision |
 |---|---|---|
@@ -40,6 +43,8 @@ inputs or a seed so its results can be checked again.
 | 09_kmeans_pca | Recover synthetic groups and visualize them | Lloyd iterations, SVD/PCA, cluster evaluation | NumPy, scikit-learn, matplotlib | Nonincreasing inertia; adjusted Rand score ≥ 0.90; saved plot |
 | 10_q_learning | Learn a route around blocked cells | Bellman updates, exploration, policies | NumPy, matplotlib | TD-error shapes; falling evaluation cost; goal success ≥ 0.95 |
 
+| 11_hidden_markov_model | Infer hidden machine conditions from sensor sequences | Forward algorithm, Viterbi, log-space arithmetic | Standard library | Exhaustive path agreement; finite scores on 10,000 readings; invalid inputs rejected |
+
 ## Working assumptions
 
 These are independent educational command-line programs, not deployed services.
@@ -51,7 +56,8 @@ raw temporal-difference errors need not decrease monotonically.
 For k-means, inertia is the loss and adjusted Rand score measures recovery rather
 than supervised accuracy. Plots use Agg and are committed under results/.
 
-A single branch contains a scaffold commit followed by one commit per project.
-Repository settings are left unchanged. Remote publication requires verified
-private visibility; unknown visibility is insufficient to push. Design choices,
-validation evidence and access limitations will be recorded in the PR description.
+The initial ten projects were delivered together. Subsequent additions use
+project branches and pull requests containing implementation, documentation
+and validation evidence. The owner has authorized publication to the public
+repository and merging the Hidden Markov Model addition. Repository settings
+are left unchanged.
