@@ -1,6 +1,6 @@
 # Python programs for AI study
 
-Ten small, offline Python projects exploring algorithms, software design and
+Eleven small, offline Python projects exploring algorithms, software design and
 machine learning. Each directory contains a runnable demonstration, focused
 tests and notes about its results and limitations. The selection and acceptance
 criteria are in [the plan](docs/PLAN.md).
@@ -18,6 +18,8 @@ criteria are in [the plan](docs/PLAN.md).
 | [K-means and PCA](projects/09_kmeans_pca/README.md) | Recover synthetic clusters and plot a two-dimensional projection. |
 | [Q-learning](projects/10_q_learning/README.md) | Learn a route through a small blocked grid. |
 
+| [Hidden Markov Model](projects/11_hidden_markov_model/README.md) | Decode hidden machine states and score sensor sequences in log space. |
+
 ## Setup
 
 Use Python 3.11 or 3.12. From the repository root:
@@ -31,7 +33,7 @@ pytest
 ```
 
 Installation needs package-registry access; all examples and tests run offline
-afterward. The first six projects need only the standard library. The last four
+afterward. The first six projects need only the standard library. Projects 07–10
 list their runtime dependencies in their own requirements files.
 
 Run one example with `python projects/01_dependency_scheduler/main.py`, or all:
