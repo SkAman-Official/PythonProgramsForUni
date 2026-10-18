@@ -42,7 +42,6 @@ inputs or a seed so its results can be checked again.
 | 08_backprop_network | Learn nonlinear decision boundaries | Chain rule, minibatch-free optimization | NumPy, scikit-learn | Gradient finite differences; falling loss; accuracy ≥ 0.85 |
 | 09_kmeans_pca | Recover synthetic groups and visualize them | Lloyd iterations, SVD/PCA, cluster evaluation | NumPy, scikit-learn, matplotlib | Nonincreasing inertia; adjusted Rand score ≥ 0.90; saved plot |
 | 10_q_learning | Learn a route around blocked cells | Bellman updates, exploration, policies | NumPy, matplotlib | TD-error shapes; falling evaluation cost; goal success ≥ 0.95 |
-
 | 11_hidden_markov_model | Infer hidden machine conditions from sensor sequences | Forward algorithm, Viterbi, log-space arithmetic | Standard library | Exhaustive path agreement; finite scores on 10,000 readings; invalid inputs rejected |
 
 ## Working assumptions

@@ -17,7 +17,6 @@ criteria are in [the plan](docs/PLAN.md).
 | [Backpropagation network](projects/08_backprop_network/README.md) | Train a small nonlinear classifier with explicit gradients. |
 | [K-means and PCA](projects/09_kmeans_pca/README.md) | Recover synthetic clusters and plot a two-dimensional projection. |
 | [Q-learning](projects/10_q_learning/README.md) | Learn a route through a small blocked grid. |
-
 | [Hidden Markov Model](projects/11_hidden_markov_model/README.md) | Decode hidden machine states and score sensor sequences in log space. |
 
 ## Setup
@@ -33,7 +32,7 @@ pytest
 ```
 
 Installation needs package-registry access; all examples and tests run offline
-afterward. The first six projects need only the standard library. Projects 07–10
+afterward. Projects 01–06 and 11 need only the standard library. Projects 07–10
 list their runtime dependencies in their own requirements files.
 
 Run one example with `python projects/01_dependency_scheduler/main.py`, or all:
