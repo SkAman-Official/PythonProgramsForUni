@@ -1,6 +1,6 @@
 # Portfolio plan
 
-The portfolio currently contains six core computer-science projects and five
+The portfolio currently contains seven core computer-science projects and five
 AI or probabilistic modelling projects, as part of a 30-day Python practice goal.
 Each program runs offline on a CPU and uses Python 3.11+. The initial ten
 projects targeted about 150–400 source lines; additions prioritize clear scope
@@ -43,6 +43,7 @@ inputs or a seed so its results can be checked again.
 | 09_kmeans_pca | Recover synthetic groups and visualize them | Lloyd iterations, SVD/PCA, cluster evaluation | NumPy, scikit-learn, matplotlib | Nonincreasing inertia; adjusted Rand score ≥ 0.90; saved plot |
 | 10_q_learning | Learn a route around blocked cells | Bellman updates, exploration, policies | NumPy, matplotlib | TD-error shapes; falling evaluation cost; goal success ≥ 0.95 |
 | 11_hidden_markov_model | Infer hidden machine conditions from sensor sequences | Forward algorithm, Viterbi, log-space arithmetic | Standard library | Exhaustive path agreement; finite scores on 10,000 readings; invalid inputs rejected |
+| bloom_filter | Check membership with bounded storage | Packed bits, SHA-256 double hashing, probabilistic data structures | Standard library | No false negatives; empirical false positives ≤ 1.5× target; sizing and validation checks |
 
 ## Working assumptions
 

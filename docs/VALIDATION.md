@@ -1,5 +1,18 @@
 # Validation record
 
+## Bloom filter addition
+
+The full suite passed locally under Python 3.11.17: 95 tests, including 25
+Bloom filter cases. The new tests also passed under Python 3.12.14. Ruff passed
+repository-wide. CI now discovers root-level tests and runs `python demo.py`
+in addition to the existing project demonstrations.
+
+The seeded demo inserted 10,000 unique strings and checked 100,000 guaranteed
+non-members per target. Measured false-positive rates were 1.0200%, 0.1030% and
+0.0130% for targets of 1%, 0.1% and 0.01%. All met the requested 1.5× empirical
+bound on this fixed sample. The Bloom filter README records the bit counts,
+hash counts, hash-byte convention and limitations.
+
 ## Hidden Markov Model addition
 
 The expanded eleven-project repository passed Ruff and all 70 tests locally

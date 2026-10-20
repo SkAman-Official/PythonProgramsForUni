@@ -25,3 +25,4 @@ jobs:
           for program in projects/*/main.py; do
             python "$program"
           done
+          python demo.py
